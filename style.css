@@ -1,0 +1,193 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=oswald=swap'); */
+
+body {
+    background-color: antiquewhite;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 0px 12px;
+    margin: 0px;
+}
+
+
+.brand img {
+    border-radius: 10px;
+    width: 57px;
+    padding: 0px 12px;
+
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.container {
+    min-height: 72vh;
+    background-color: rgb(11, 10, 10);
+    color: azure;
+    display: flex;
+    margin: 23px auto;
+    width: 75%;
+    border-radius: 12px;
+    padding: 23px;
+    background-image: url('mu2.jpg');
+}
+
+.bottom {
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    color: white;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons {
+    margin: 12px 0px;
+}
+
+.icons i {
+    cursor: pointer;
+}
+
+#myProgressBar {
+    width: 80vw;
+    cursor: pointer;
+}
+
+.songsItemcontainer {
+    margin-top: 74px;
+
+}
+
+.songsItem {
+    height: 50px;
+    display: flex;
+    background-color: white;
+    width: 95%;
+    color: black;
+    margin: 12px 0px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+
+}
+
+.songsItem img {
+    border-radius: 45px;
+    width: 60px;
+    margin: 0 25px;
+    height: 52px;
+
+}
+
+.timestamp {
+    margin: 0 19px;
+}
+
+.timestamp i {
+    margin: 0px 23px;
+    cursor: pointer;
+
+}
+
+.songsinfo {
+    position: absolute;
+    left: 10vw;
+}
+
+.bubble img {
+    width: 50px;
+    animation: bubble 7s linear infinite;
+   
+}
+
+.bubble {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -0;
+
+}
+
+@keyframes bubble {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    50% {
+
+        opacity: 1;
+    }
+
+    70% {
+
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+}
+
+.bubble img:nth-child(1) {
+    animation-delay: 2s;
+    width: 25px;
+}
+
+.bubble img:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.bubble img:nth-child(3) {
+    animation-delay: 1.5s;
+    width: 45px;
+
+}
+
+.bubble img:nth-child(4) {
+    animation-delay: 3.5s;
+}
+
+.bubble img:nth-child(5) {
+    animation-delay: 4s;
+    width: 20px;
+}
+
+.bubble img:nth-child(6) {
+    animation-delay: 5s;
+}
+
+.bubble img:nth-child(7) {
+    animation-delay: 5.6s;
+    width: 35px;
+}
